@@ -99,8 +99,8 @@ fetchLocations()
 
 function popupMsg() {
     Swal.fire({
-    title: 'We found some restaurants you might like.',
-    text: '',
+    title: ' You was added to the queue',
+    text: 'You will receive an email when a group is created',
     type: 'success',
     confirmButtonText: 'I am hungry !!!'
 })
