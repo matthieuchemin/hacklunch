@@ -1,5 +1,5 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoicGVwcGVyaGFja2x1bmNoIiwiYSI6ImNqczV5ZXkyMzBpeHIzeXNieG0xc2J0dG4ifQ.pOCQjUyCYIzE4to5kjmEqw';
-						
+
 var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/mapbox/outdoors-v9', //stylesheet location
@@ -37,17 +37,20 @@ map.on('load', function() {
     });
 });
 
-map.getSource('polygon').setData(createGeoJSONCircle([-93.6248586, 41.58527859], 1).data);
-
-map.addLayer({
-    "id": "polygon",
-    "type": "fill",
-    "source": "polygon",
-    "layout": {},
-    "paint": {
-        "fill-color": "blue",
-        "fill-opacity": 0.6
-    }
-});
-
 console.log("hfdfj")
+
+function fetchLocations() {
+	var url = "htpps://example.com/places/getNearby"
+	$.ajax({
+		url: url,
+		type: "GET",
+		success: function(result) {
+			console.log(result);
+		},
+		error: function(error) {
+			console.log(error);
+		}
+	})
+}
+
+fetchLocations()
