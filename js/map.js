@@ -3,7 +3,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicGVwcGVyaGFja2x1bmNoIiwiYSI6ImNqczV5ZXkyMzBpe
 var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/mapbox/outdoors-v9', //stylesheet location
-    center: [13.4020788, 52.5270968], // starting position. // 52.5270968,13.4020788,15z
+    center: [13.396003, 52.528878], // starting position. // 52.5270968,13.4020788,15z
     zoom: 13 // starting zoom
 });
 
