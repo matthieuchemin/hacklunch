@@ -14,25 +14,30 @@
 </head>
 <body>
 
-    <div id='map'></div>
-        <div class="menu">
 
-            <form >
-                <input type="text" name="walk" value="7"> mins of walk<br>
-                <input type="checkbox" name="asap" value="Car"> ASAP<br>
-                <input type="checkbox" name="friends" value="Car"> only friends<br>
-                <input type="submit" value="Generate">
-            </form>
-        </div>
-    </div>
-
-    <div class='results'>
-        <ul id="result_list">
-        </ul>
-    </div>
-
+<div id='map'></div>
 
 </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<<<<<<< HEAD
     <script src='js/map.js'></script>
+
+    <div class="menu">
+
+			<form action="">
+				<input type="text" name="walk" value="7"> mins of walk<br>
+				<input type="checkbox" name="asap" value="Car"> ASAP<br>
+				<input type="checkbox" name="friends" value="Car"> only friends<br>
+				
+				<input type="submit" value="Generate">
+			</form>
+		    <div class="menu-walk">
+		    	
+		    </div>
+    </div>
+
 </html>
+=======
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='js/map.js'></script>
+</html>
+>>>>>>> 9b420a98ef3d89500664bede88bed47291854aa5
