@@ -39,25 +39,8 @@ var map = new mapboxgl.Map({
 });
 
 map.addControl(new mapboxgl.FullscreenControl());
-                
+
 addMarkerOnMap([13.4020788, 52.5270968], "a", "a", "map-marker.png");
-addMarkerOnMap([13.3948603, 52.5276292], "b", "b", "map.png");
-addMarkerOnMap([13.403601, 52.524306], "c", "c", "map.png");
-addMarkerOnMap([13.411564, 52.530284], "d", "d", "map.png");
-addMarkerOnMap([13.395083,52.531865], "e", "e", "map.png");
-
-map.addSource("polygon", createGeoJSONCircle([13.4020788, 52.5270968], 0.5));
-
-map.addLayer({
-    "id": "polygon",
-    "type": "fill",
-    "source": "polygon",
-    "layout": {},
-    "paint": {
-        "fill-color": "blue",
-        "fill-opacity": 0.6
-    }
-});
 
 var BASE_URL = "http://127.0.0.1:8000"
 
@@ -97,6 +80,9 @@ function displayLocations(locations) {
 		div.appendChild(image)
 		li.appendChild(div)
 		list.appendChild(li)
+
+
+		addMarkerOnMap([location.long, location.lat], i.toString(), i.toString(), "map.png");
 	}
 }
 
@@ -105,7 +91,3 @@ function displayLocations(locations) {
 
 //displayLocations(locations)
 fetchLocations()
-
-
-
-
