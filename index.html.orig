@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>View a fullscreen map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='css/style.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+
+<div id='map'></div>
+
+</body>
+<<<<<<< HEAD
+    <script src='js/map.js'></script>
+
+    <div class="menu">
+
+			<form action="">
+				<input type="text" name="walk" value="7"> mins of walk<br>
+				<input type="checkbox" name="asap" value="Car"> ASAP<br>
+				<input type="checkbox" name="friends" value="Car"> only friends<br>
+				
+				<input type="submit" value="Generate">
+			</form>
+		    <div class="menu-walk">
+		    	
+		    </div>
+    </div>
+
+</html>
+=======
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='js/map.js'></script>
+</html>
+>>>>>>> 9b420a98ef3d89500664bede88bed47291854aa5

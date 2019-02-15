@@ -6,6 +6,7 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='css/style.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -13,10 +14,48 @@
 </head>
 <body>
 
+    <div id='map'></div>
+        <div class="menu">
 
-<div id='map'></div>
+            <form action="">
+                <input type="text" name="walk" value="7"> mins of walk<br>
+                <input type="checkbox" name="asap" value="Car"> ASAP<br>
+                <input type="checkbox" name="friends" value="Car"> only friends<br>
+                <input type="submit" value="Generate">
+            </form>
+        </div>
+    </div>
+
+    <div class='results'>
+        <ul>
+            <li>
+                <div class="element">
+                    <h5 id="title">Restaurant Refugium</h5>
+                    <img id="image" src="https://media-cdn.tripadvisor.com/media/photo-s/0a/6a/02/c6/innenraum-refugium.jpg">
+                </div>
+            </li>
+
+            <li>
+                <div class="element">
+                    <h5 id="title">Restaurant Refugium</h5>
+                    <img id="image" src="https://media-cdn.tripadvisor.com/media/photo-s/0a/6a/02/c6/innenraum-refugium.jpg">
+                </div>
+            </li>
+
+            <li>
+                <div class="element">
+                    <h5 id="title">Restaurant Refugium</h5>
+                    <img id="image" src="https://media-cdn.tripadvisor.com/media/photo-s/0a/6a/02/c6/innenraum-refugium.jpg">
+                </div>
+            </li>
+
+
+        </ul>
+
+    </div>
+
 
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src='js/map.js'></script>
+    <script src='js/map.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </html>
