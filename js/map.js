@@ -39,18 +39,22 @@ map.on('load', function() {
 
 console.log("hfdfj")
 
+var BASE_URL = "http://127.0.0.1:8000"
+
 function fetchLocations() {
-	var url = "htpps://example.com/places/getNearby"
+	var url = BASE_URL + "/places/getNearby"
 	$.ajax({
 		url: url,
 		type: "GET",
 		success: function(result) {
+			// TODO display the result
 			console.log(result);
 		},
 		error: function(error) {
 			console.log(error);
 		}
 	})
+
 }
 
 fetchLocations()
