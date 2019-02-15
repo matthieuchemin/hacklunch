@@ -1,5 +1,5 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoicGVwcGVyaGFja2x1bmNoIiwiYSI6ImNqczV5ZXkyMzBpeHIzeXNieG0xc2J0dG4ifQ.pOCQjUyCYIzE4to5kjmEqw';
-						
+
 var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/mapbox/outdoors-v9', //stylesheet location
@@ -38,3 +38,19 @@ map.on('load', function() {
 });
 
 console.log("hfdfj")
+
+function fetchLocations() {
+	var url = "htpps://example.com/places/getNearby"
+	$.ajax({
+		url: url,
+		type: "GET",
+		success: function(result) {
+			console.log(result);
+		},
+		error: function(error) {
+			console.log(error);
+		}
+	})
+}
+
+fetchLocations()
