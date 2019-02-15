@@ -95,3 +95,26 @@ function displayLocations(locations) {
 
 //displayLocations(locations)
 fetchLocations()
+
+
+function popupMsg() {
+    Swal.fire({
+    title: ' You was added to the queue',
+    text: 'You will receive an email when a group is created',
+    type: 'success',
+    confirmButtonText: 'I am hungry !!!'
+})
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
