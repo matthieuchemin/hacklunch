@@ -69,6 +69,9 @@ function displayLocations(locations) {
 	for (i = 0; i < locations.length; i++) {
 		var location = locations[i];
 		var li = document.createElement("li")
+		var a = document.createElement("a")
+		a.href = location.website
+		a.target = "_blank"
 		var div = document.createElement("div")
 		div.className = "element"
 		var title = document.createElement("h5")
@@ -78,7 +81,8 @@ function displayLocations(locations) {
 		title.appendChild(text)
 		div.appendChild(title)
 		div.appendChild(image)
-		li.appendChild(div)
+		a.appendChild(div)
+		li.appendChild(a)
 		list.appendChild(li)
 
 
