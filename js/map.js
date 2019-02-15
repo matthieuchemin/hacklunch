@@ -95,3 +95,26 @@ function displayLocations(locations) {
 
 //displayLocations(locations)
 fetchLocations()
+
+
+function popupMsg() {
+    Swal.fire({
+    title: 'We found some restaurants you might like.',
+    text: '',
+    type: 'success',
+    confirmButtonText: 'I am hungry !!!'
+})
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

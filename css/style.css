@@ -28,9 +28,18 @@ input[name="walk"] {
   	width: 15px;
 }
 
-input[type="submit"] {
-	width: 80%;
+#submit {
+	position: absolute;
+	width: 100px;
+	height: 25px;
+	/*padding-left: 60px;*/
+	/*padding-top: 5px;*/
 	margin-left: 20px;
+	margin-top: 20px;
+	background-color: gray;
+	text-decoration: none;
+	color: white;
+	border-radius: 5px;
 }
 
 .results {
