@@ -37,4 +37,17 @@ map.on('load', function() {
     });
 });
 
+map.getSource('polygon').setData(createGeoJSONCircle([-93.6248586, 41.58527859], 1).data);
+
+map.addLayer({
+    "id": "polygon",
+    "type": "fill",
+    "source": "polygon",
+    "layout": {},
+    "paint": {
+        "fill-color": "blue",
+        "fill-opacity": 0.6
+    }
+});
+
 console.log("hfdfj")
